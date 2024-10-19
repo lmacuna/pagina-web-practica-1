@@ -1,0 +1,53 @@
+#root{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0px;
+}
+@media (max-width:1051px) {
+    section>img{
+        width:38em !important;
+    }
+}
+@media (max-width:800px) {
+    #carouselExampleCaptions{
+        width: 98% !important;
+    }
+    article{
+        width: 98% !important;
+        padding: 15px !important;
+    }
+    section>img{
+            width: 98% !important;
+    }
+}
+section{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding: 20px 5px;
+}
+
+article{
+    width: 38em;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    border: 1px solid grey;
+    padding: 10px;
+    gap: 0.3em;
+}
+article>p{
+    font-size: 14px;
+    font-family: 'Kanit';
+
+}

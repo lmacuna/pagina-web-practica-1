@@ -1,0 +1,98 @@
+#root {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px 0px;
+}
+
+form {
+    width: 500px;
+    height: auto;
+    border: 1px solid grey;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: 'Kanit';
+}
+
+h5 {
+    color: rgb(255, 255, 255);
+}
+
+#elementos-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    padding: 50px 0px;
+}
+
+#header-form {
+    width: 100%;
+    height: 70px;
+    background: rgb(126, 126, 126);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-form {
+    width: 100%;
+    height: 70px;
+    background: rgb(80, 187, 80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 95%;
+    height: 40px;
+    font-family: 'Kanit';
+    border: none;
+    border-bottom: 2px dashed rgb(120, 120, 120);
+    cursor: pointer;
+}
+
+#nombre,
+#email {
+    padding: 5px;
+}
+
+textarea {
+    width: 95%;
+    padding: 5px;
+    border: 2px dashed rgb(120, 120, 120);
+}
+
+#nacimiento {
+    border: 1px solid grey !important;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(235, 235, 235) !important;
+}
+
+#btn-form {
+    background: rgb(235, 235, 235) !important;
+    border: none !important;
+    border-radius: 4px;
+}
+#btn-form:hover{
+    background: white !important;
+}
+#btn-form:active{
+    background: rgb(2, 2, 2) !important;
+    box-shadow: 0 0 10px white,0 0 20px white,0 0 40px white !important;
+    color: white !important;
+    transform: scale(0.9);
+}
+@media (max-width:952px) {
+    form {
+        width: 95% !important;
+    }
+}

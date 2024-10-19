@@ -1,0 +1,20 @@
+{
+    "linksNavbar":[
+        {
+            "page":"Home",
+            "link":"index.html"
+        },
+        {
+            "page":"About",
+            "link":"about.html"
+        },
+        {
+            "page":"Products",
+            "link":"products.html"
+        },
+        {
+            "page":"Contact",
+            "link":"contact.html"
+        }
+    ]
+}
