@@ -1,18 +1,18 @@
 const form = document.querySelector("form")
 
 
-let expReg=/^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
+let expReg = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i
 
-form.addEventListener('submit',(e)=>{
+form.addEventListener('submit', (e) => {
 
-    e.preventDefault()
+  e.preventDefault()
   /*  let confirmacion= window.confirm("Deseas enviar este mensaje?")
    console.log(confirmacion) */
-   const swalWithBootstrapButtons = Swal.mixin({
+  const swalWithBootstrapButtons = Swal.mixin({
     customClass: {
       confirmButton: "btn btn-success",
       cancelButton: "btn btn-danger",
-       
+
     },
     buttonsStyling: false
   });
@@ -20,8 +20,8 @@ form.addEventListener('submit',(e)=>{
     title: "Are you sure?",
     text: "Deseas enviar este mensaje??",
     icon: "info",
-    background:"rgb(240,240,240)",
-    color:"rgb(20,20,20)",
+    background: "rgb(240,240,240)",
+    color: "rgb(20,20,20)",
     showCancelButton: true,
     confirmButtonText: "Sí, enviar mensaje!",
     cancelButtonText: "Cancelo el envio!",
@@ -32,12 +32,12 @@ form.addEventListener('submit',(e)=>{
         title: "Enviado!",
         text: "El mensaje se envio con correctamente.",
         icon: "success",
-        timer:5000,
+        timer: 5000,
         showCancelButton: false,
-        showConfirmButton:false
+        showConfirmButton: false
       });
       console.log(result)
-      return(e.target.reset())
+      return (e.target.reset())
     } else if (
       /* Read more about handling dismissals below */
       result.dismiss === Swal.DismissReason.cancel
@@ -46,9 +46,9 @@ form.addEventListener('submit',(e)=>{
         title: "Envio cancelado",
         text: "Your imaginary file is safe :)",
         icon: "error",
-        timer:5000,
+        timer: 5000,
         showCancelButton: false,
-        showConfirmButton:false
+        showConfirmButton: false
       });
       console.log(result)
     }
@@ -56,12 +56,21 @@ form.addEventListener('submit',(e)=>{
 })
 
 
-const inputEmail=document.querySelector("#email")
+const inputEmail = document.querySelector("#email")
 
-inputEmail.addEventListener('input',(e)=>{
-   console.log(e.target.value)
-   if(e.target.value){
-           let emailValidacion=expReg.test(e.target.value)
-           console.log(emailValidacion)
-   }
+inputEmail.addEventListener('input', (e) => {
+  console.log(e.target.value)
+  if (e.target.value) {
+    let emailValidacion = expReg.test(e.target.value)
+    console.log(emailValidacion)
+    if (emailValidacion) {
+      inputEmail.setAttribute("style", "border-bottom:2px solid green")
+    } else {
+      inputEmail.setAttribute("style", "border-bottom:2px solid red")
+
+    }
+  } else if (e.target.value === "") {
+    inputEmail.setAttribute("style", "border-bottom: 2px dashed rgb(120, 120, 120)")
+
+  }
 })
