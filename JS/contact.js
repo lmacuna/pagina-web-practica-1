@@ -37,6 +37,7 @@ form.addEventListener('submit',(e)=>{
         showConfirmButton:false
       });
       console.log(result)
+      return(e.target.reset())
     } else if (
       /* Read more about handling dismissals below */
       result.dismiss === Swal.DismissReason.cancel
