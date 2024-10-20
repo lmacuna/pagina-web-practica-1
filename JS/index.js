@@ -3,21 +3,21 @@ document.querySelector("#root").innerHTML=`
          <!-- INDICADORES -->
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img style="height: 308px !important;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpPBaTX1kkpM2UGWNR6OobSwJ23yVpL7L-0w&s" class="d-block w-100" alt="...">
+                <img style="height: 437px;" src="https://st4.depositphotos.com/12981370/24312/i/450/depositphotos_243120806-stock-photo-programmer-working-software-development-coding.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>First slide label</h5>
                   <p>Some representative placeholder content for the first slide.</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img style="height: 308px !important;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdBmtqpGX3N2JOq9_ZfLy_oFARdo15ByJcqnBSdD4zOb-laJUMWL3ccv60yG-21XFs4Eg&usqp=CAU" class="d-block w-100" alt="...">
+                <img style="height: 437px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdBmtqpGX3N2JOq9_ZfLy_oFARdo15ByJcqnBSdD4zOb-laJUMWL3ccv60yG-21XFs4Eg&usqp=CAU" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Second slide label</h5>
                   <p>Some representative placeholder content for the second slide.</p>
                 </div>
               </div>
               <div class="carousel-item">
-                <img style="height: 308px !important;" src="https://image.slidesdocs.com/responsive-images/background/vintage-desktop-with-keyboard-and-mouse-on-boldly-colored-3d-powerpoint-background_0e0c2e554b__960_540.jpg" class="d-block w-100" alt="...">
+                <img style="height: 437px;" src="https://media.istockphoto.com/id/1322050853/es/foto/programador-mujer-codificaci%C3%B3n-en-la-computadora.jpg?s=612x612&w=0&k=20&c=qKfSVzx2qnxegmKlUUESlsCw73E52rmammXW4n9aiHc=" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
                   <h5>Third slide label</h5>
                   <p>Some representative placeholder content for the third slide.</p>
