@@ -10,6 +10,10 @@
 }
 #carouselExampleCaptions>.carousel-item>img{
     height:437px !important;
+    border-radius: 4px !important;
+}
+#carouselExampleCaptions{
+    border-radius: 4px !important;
 }
 @media (max-height:720px)and (max-width:420px) {
     #root{
@@ -51,10 +55,10 @@ section{
     flex-wrap: wrap;
     gap: 1em;
     padding: 20px 5px;
-    background: rgb(255, 255, 255);
+    background: rgb(243, 242, 242);
 }
 section>img{
-    border-radius: 10px;
+    border-radius: 4px;
 }
 article{
     width: 38em;
@@ -63,11 +67,11 @@ article{
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    border: 1px solid grey;
+    border: 2px solid rgb(207, 207, 207);
     padding: 10px;
     gap: 0.3em;
     background: white;
-    border-radius: 10px;
+    border-radius: 4px;
 }
 article>p{
     font-size: 14px;
